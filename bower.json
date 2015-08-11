@@ -1,0 +1,33 @@
+{
+  "name": "lucode-debugbar",
+  "version": "0.0.1",
+  "homepage": "https://github.com/lucodepl/debugbar",
+  "authors": [
+    "lukom <lukasz.wroblewski88@gmail.com>"
+  ],
+  "description": "Angular Debug Bar",
+  "main": [
+    "dist/js/lucode-debugbar.min.js",
+    "dist/css/lucode-debugbar.min.css"
+  ],
+  "keywords": [
+    "AngularJS",
+    "Debug"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "1.3.15",
+    "angular-route": "1.3.15",
+    "fontawesome": "~4.4.0",
+    "angular-local-storage": "~0.2.2",
+    "restangular": "~1.5.1",
+    "html5-boilerplate": "~5.2.0"
+  }
+}

@@ -1,2 +1,1 @@
-# debugbar
-angular debug bar
+# Angular Debug

@@ -1,0 +1,111 @@
+.debugbar {
+  position: fixed;
+  bottom: -36px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 36px;
+  background: #212f3e;
+  color: #1fb18b;
+
+  -webkit-transition: -webkit-transform 200ms ease-in-out;
+  -moz-transition: transform 200ms ease-in-out;
+  -o-transition: transform 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
+
+  a {
+    text-decoration: none;
+  }
+
+  &.show {
+    transform: translate(0, -36px);
+    -webkit-transform: translate(0, -36px);
+  }
+
+  &.show-tab {
+    transform: translate(0, -200px);
+    -webkit-transform: translate(0, -200px);
+  }
+
+  &__btn {
+    position: relative;
+    float: left;
+    margin: 3px;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+    transform: translate(0, -12px);
+    -webkit-transform: translate(0, -12px);
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+
+    -webkit-transition: -webkit-transform 200ms ease-in-out;
+    -moz-transition: transform 200ms ease-in-out;
+    -o-transition: transform 200ms ease-in-out;
+    transition: transform 200ms ease-in-out;
+
+    &:hover {
+      transform: translate(0, -16px);
+      -webkit-transform: translate(0, -16px);
+    }
+
+    .show & {
+      transform: translate(0);
+      -webkit-transform: translate(0);
+    }
+  }
+
+  &__nav {
+    height: 30px;
+    margin: 3px;
+    list-style-type: none;
+
+    li {
+      float: left;
+      height: 30px;
+      margin-left: 5px;
+
+      a {
+        display: block;
+        height:30px;
+        padding: 0 5px;
+        line-height:30px;
+        color: #fff;
+      }
+
+      &.active {
+        background: rgba(255, 255, 255, .15);
+      }
+    }
+  }
+
+  &__tabs {
+    height: 170px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #fff;
+  }
+
+
+  &__badge {
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    margin-left: 3px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    color: #19232f;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+
+  &--right {
+    float: right !important;
+  }
+}
