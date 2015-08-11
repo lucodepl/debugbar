@@ -12,7 +12,7 @@
                             scope.requests.push({
                                 url: url,
                                 params: response.config.params,
-                                debug: 'http://fitcalories.local/_profiler/' + response.headers('X-Debug-Token')
+                                debug: response.headers('X-Debug-Token-Link')
                             });
                             return data;
                         });
